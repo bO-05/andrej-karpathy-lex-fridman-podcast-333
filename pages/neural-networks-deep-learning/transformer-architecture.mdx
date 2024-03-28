@@ -1,0 +1,47 @@
+import { Callout, Steps, Step } from "nextra-theme-docs";
+
+# Transformer Architecture
+
+The transformer architecture, introduced in the 2017 paper ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762), has revolutionized the field of deep learning, particularly in natural language processing (NLP) tasks. It has become the foundation for state-of-the-art models like GPT (Generative Pre-trained Transformer) and BERT (Bidirectional Encoder Representations from Transformers).
+
+## Key Components
+
+The transformer architecture consists of several key components:
+
+1. **Attention Mechanism**: Transformers rely heavily on the attention mechanism, which allows the model to weigh the importance of different parts of the input sequence when generating the output. This enables the model to focus on relevant information and capture long-range dependencies.
+
+2. **Encoder-Decoder Structure**: Transformers follow an encoder-decoder structure, where the encoder processes the input sequence and generates a representation, and the decoder generates the output sequence based on the encoder's representation.
+
+3. **Multi-Head Attention**: Transformers employ multi-head attention, which allows the model to attend to different parts of the input sequence simultaneously. Each attention head can learn different relationships and patterns within the data.
+
+4. **Positional Encoding**: Since transformers do not have an inherent understanding of the position of tokens in a sequence, positional encoding is added to the input embeddings to provide this information.
+
+## Advantages of Transformers
+
+Transformers offer several advantages over previous architectures like recurrent neural networks (RNNs) and convolutional neural networks (CNNs):
+
+- **Parallelization**: Transformers can process input sequences in parallel, making them more efficient and faster to train compared to RNNs, which process sequences sequentially.
+
+- **Long-range Dependencies**: The attention mechanism in transformers allows them to capture long-range dependencies more effectively than RNNs, which struggle with vanishing gradients when dealing with long sequences.
+
+- **Scalability**: Transformers can be scaled up to process larger datasets and handle more complex tasks by increasing the number of layers, attention heads, and hidden units.
+
+<Callout emoji="💡">
+The transformer architecture has been adapted for various tasks beyond NLP, including computer vision, speech recognition, and even protein folding prediction, demonstrating its versatility and potential for further innovation.
+</Callout>
+
+## Transformer-based Models
+
+Since the introduction of the transformer architecture, numerous models have been developed that build upon its principles. Some notable examples include:
+
+- **GPT (Generative Pre-trained Transformer)**: GPT models are trained on large amounts of text data and can generate human-like text, answer questions, and perform various language tasks.
+
+- **BERT (Bidirectional Encoder Representations from Transformers)**: BERT models are pre-trained on masked language modeling and next sentence prediction tasks, allowing them to learn bidirectional representations of text. They have achieved state-of-the-art results on many NLP benchmarks.
+
+- **ViT (Vision Transformer)**: ViT adapts the transformer architecture for computer vision tasks by treating images as sequences of patches and applying the standard transformer encoder.
+
+## Conclusion
+
+The transformer architecture has had a profound impact on the field of deep learning, enabling significant advancements in natural language processing and beyond. Its ability to capture long-range dependencies, process sequences in parallel, and scale to large datasets has made it a go-to choice for many researchers and practitioners.
+
+For more information on how transformers are being applied in various domains, check out the [Tesla's AI Endeavors](/tesla-ai-endeavors) section, which discusses the use of transformers in autonomous driving and humanoid robotics.
