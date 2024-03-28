@@ -2,4 +2,51 @@ import { Callout, Steps, Step } from "nextra-theme-docs";
 
 # Autonomous Driving
 
-In this section, we'll dive into Tesla's approach to solving the challenge of autonomous driving using computer vision. Under the leadership of Andrej Karpathy, Tesla's AI team has
+In this section, we'll dive into Tesla's approach to solving the challenge of autonomous driving using computer vision. Under the leadership of Andrej Karpathy, Tesla's AI team has made significant strides in developing a vision-based system that relies primarily on cameras and deep learning to perceive and navigate the environment.
+
+## The Vision-Based Approach
+
+Tesla's strategy for autonomous driving differs from many other companies in the industry. While others rely heavily on lidar and high-definition maps, Tesla has chosen to focus on cameras as the primary sensors. This approach is inspired by how humans drive - we use our eyes to observe the world around us and make decisions based on what we see.
+
+<Callout emoji="💡">
+  By using cameras, Tesla can leverage the power of deep learning to create a more scalable and adaptable system that can handle the vast diversity of real-world driving scenarios.
+</Callout>
+
+## The Data Engine
+
+At the heart of Tesla's autonomous driving system is what Andrej Karpathy calls the "data engine." This is a process that involves collecting, annotating, and using vast amounts of data to train and improve the neural networks that power the perception and decision-making capabilities of the vehicle.
+
+<Steps>
+### Step 1: Data Collection
+
+Tesla leverages its fleet of vehicles to collect data from real-world driving situations. This includes images from the car's cameras, as well as telemetry data such as speed, acceleration, and steering angle.
+
+### Step 2: Data Annotation
+
+The collected data is then annotated, either by human labelers or through automated processes, to provide ground truth labels for training the neural networks. This may include labeling objects like vehicles, pedestrians, and traffic signs in the images.
+
+### Step 3: Neural Network Training
+
+The annotated data is used to train deep neural networks, such as convolutional neural networks (CNNs) and transformers, to accurately perceive and interpret the environment from the camera inputs.
+
+### Step 4: Deployment and Iteration
+
+The trained neural networks are deployed to the vehicles, enabling them to make real-time decisions based on the camera inputs. As more data is collected and the system is tested in various conditions, the process iterates, allowing for continuous improvement of the autonomous driving capabilities.
+</Steps>
+
+## Challenges and Progress
+
+Developing a robust autonomous driving system is no easy feat. It requires handling a wide range of complex scenarios, from varying weather conditions to unpredictable human behavior. However, Tesla's vision-based approach has shown promising results, with the company making steady progress towards higher levels of autonomy.
+
+Some of the key challenges Tesla is working on include:
+
+- Accurately detecting and tracking objects in 3D space using 2D camera inputs
+- Handling edge cases and rare events that may not be well-represented in the training data
+- Ensuring the system can operate safely and reliably in all conditions
+- Dealing with the inherent uncertainty and ambiguity in real-world driving situations
+
+Despite these challenges, Tesla's focus on vision and deep learning has allowed them to make significant advancements in autonomous driving technology. As the data engine continues to evolve and the neural networks become more sophisticated, the goal of full self-driving comes closer to reality.
+
+<Callout emoji="🔗">
+  To learn more about Tesla's plans for the future of autonomous robotics, check out the [Optimus Humanoid Robot](/tesla-ai-endeavors/optimus-humanoid-robot) section.
+</Callout>
